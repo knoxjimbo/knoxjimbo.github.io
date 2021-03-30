@@ -5,7 +5,7 @@ body {
 
 header {  
   color: #0099FF;
-  padding: 20px 0 20px 0
+  padding: 5% 5% 5% 5%
 }
 
 header h1 {
@@ -13,18 +13,20 @@ header h1 {
   justify-content: center;
   font-size: 50px;
   margin: 0px;
+  padding-left: 0
 }
 
 header nav {
   display: flex;
   justify-content: center;
-  padding-left: 0;
+  margin: 0px;
+  padding-right: 10px 
 }
 
 header nav ul {
   display: flex; 
   list-style: none;
-   /* removes default ul padding */
+  
 }
 
 header nav ul li { 
@@ -36,12 +38,6 @@ header a:visited {
   color: #0099FF
 }
 
-/* Removes the margin to the right of the last li 
-     so that the nav appears centered. */
-
-header nav ul li:last-child {
-  margin-right: 0
-}
 
 @media all and (min-width: 820px) {
   header {
@@ -216,8 +212,8 @@ p {
 /* BEGIN FOOTER */
 
 footer h2 {
-  color: black;
-  text-align: center;
+    text-align: center;
+    padding: 0
 }
 
 footer p {
