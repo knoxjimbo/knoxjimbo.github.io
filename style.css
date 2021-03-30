@@ -1,63 +1,200 @@
-/* I wanted my page's colors to complement my outfit for a simple, unified theme */
-
 body {
-  background-color: #707070;                    
-  font-family: 'Times New Roman', Times, serif;
-  color: black
+  margin: 0px;
+  background-color: #777;
 }
 
-/* I created this class to center many HTML elements */
-
-.centered {           
-  text-align: center
+header {  
+  color: #0099FF;
+  padding: 20px 0 20px 0
 }
-
-/* I set each of the following elements' font sizes
-  individually based on what 'looked good' and alternated
-  between blue and black font to stay on-theme
-  while differentiating the information */
 
 header h1 {
-  font-size: 70px;
-  color: #0099FF; 
+  font-size: 50px;
+  text-align: center;
+  margin: 0px;
 }
 
-/* here, I utilized the "height" attribute to create
-    space between my name and location */
+header nav {
+  display: flex;
+  justify-content: center;
+}
 
-header h2 {
-  height: 100px;  
-  font-size: 43px;
+header nav ul {
+  display: flex; 
+  list-style: none;
+  padding-left: 0; /* removes default ul padding */
+}
+
+header nav ul li { 
+  font-size: 24px;  
+  margin: 0px 20px 0px 0px
+}
+
+header a:visited {
+  color: #0099FF
+}
+
+/* Removes the margin to the right of the last li 
+     so that the nav appears centered. */
+
+header nav ul li:last-child {
+  margin-right: 0
+}
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+  }
+
+  header nav {
+    margin-top: 8px
+  }
+
+  header nav ul {
+    align-items: center 
+  }
+
+  header nav ul li {
+    padding-left: 15px;
+  }
+  
+}
+/* END HEADER */
+
+
+
+/* BEGIN MAIN */
+
+/* Mobile-first responsive flexbox */
+
+main {
   margin: 0px
 }
 
-header h3 {
-  font-size: 40px;
-  color: #0099FF;
+section {
+  background-color: #999999;
 }
 
-h4 {
-  font-size: 38px;
-  color:#0099FF;
-} 
+.group {  
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
 
-/* I did all this to get the numbers right beside the li's
-    and fiddled with the padding a little to get it to look
-    'neat and workmanlike,' at least on my laptop */
+.item {
+  flex: 1;
+}
 
-.list-inside li {
-  list-style-position: inside;
-  text-align: left;
+.item-double {
+  flex: 2
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  padding-left: 5%;
+  font-size: 30px
+}
+
+h2{
+  padding-left: 5%;
+}
+
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 18px
+}
+
+.quote {
+  padding-top: 5%;
   padding-left: 10%;
-  font-size: 18px;
-  padding-top: 10px
+  padding-right: 10%;
 }
 
-/* I tried to apply this to the word 'passions' in li #5 to create continuity but couldn't get it to turn blue without disrupting the formatting so I abandoned it for later */
-
-main div {
-  color: #0099FF 
+.indent {
+  padding-left: 15%
 }
+
+
+/* for larger screens */
+
+@media all and (min-width: 800px) {
+  main section {
+    padding: 0 5%
+  }
+
+  main p{
+    font-size: 18px
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  img {
+    padding-top: 32px;
+    padding-bottom: 32px
+  }
+}
+
+@media all and (min-width: 925px) {
+  main section {
+    padding: 0 7.5%
+  }
+
+  main p {
+    font-size: 20px
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  img {
+    padding-top: 32px
+  }
+}
+
+@media all and (min-width: 1050px) {
+  main section {
+    padding: 0 10%
+  }
+
+  main h1 {
+    font-size: 36px;
+  }
+
+  main p {
+    font-size: 22px
+  }
+}
+
+@media all and (min-width: 1350px) {
+  main section {
+    padding: 0 12.5%
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  main p {
+    font-size: 26px
+  }
+}
+
+/* END MAIN */
+
+/* BEGIN FOOTER */
 
 footer h4 {
   color: black;
@@ -79,7 +216,14 @@ form textarea {
 
 /* these are for making my links change color in
     response to user input */
-
-a:link {color: orange}
-a:visited {color: #0099FF}
+a {
+  text-decoration: none
+}
+a:link {color: #99ffff}
+a:visited {color: darkblue}
 a:hover {color: yellow}
+
+/* for browsers larger than 600px */
+
+
+
