@@ -145,6 +145,10 @@ p {
     font-size: 28px;
   }
 
+  main h3{
+    font-size: 20px
+  }
+
   main p{
     font-size: 18px
   }
@@ -167,6 +171,10 @@ p {
 
   main h2 {
     font-size: 32px
+  }
+
+  main h3 {
+    font-size: 22px
   }
 
   main p {
@@ -192,7 +200,11 @@ p {
   }
 
   main h2 {
-      font-size: 32px
+    font-size: 32px
+  }
+
+  main h3 {
+    font-size: 24px
   }
 
   main p {
@@ -211,6 +223,10 @@ p {
 
   main h2 {
     font-size: 36px
+  }
+
+  main h3 {
+    font-size: 28px
   }
 
   main p {
