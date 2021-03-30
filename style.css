@@ -87,6 +87,7 @@ section {
 
 .item {
   flex: 1;
+  margin: 10px
 }
 
 .item-double {
@@ -102,9 +103,14 @@ h1 {
   font-size: 30px
 }
 
-h2{
+h2 {
   padding-left: 5%;
   font-size: 24px
+}
+
+h3 {
+  padding-left: 5%;
+  text-align: center;
 }
 
 p {
@@ -121,6 +127,11 @@ p {
 
 .indent {
   padding-left: 15%
+}
+
+.centered {
+  text-align:center;
+  padding: 0
 }
 
 
@@ -142,6 +153,7 @@ p {
   .group {
     flex-direction: row;
   }
+
 
   img {
     padding-top: 32px;
